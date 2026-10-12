@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 import helmet from 'helmet';
 import expressLayouts from 'express-ejs-layouts';
 import indexRoutes from './routes/index.routes.js';
+import icons from './utils/icons.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -19,6 +20,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(expressLayouts);
 app.set('layout', 'layouts/main');
+app.locals.icons = icons;
 
 // Static files and body parsing
 app.use(express.static(path.join(__dirname, 'public')));
