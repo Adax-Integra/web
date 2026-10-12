@@ -8,14 +8,20 @@
         <%= title %>
     </title>
     <link rel="stylesheet" href="/css/output.css">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#630e79">
 </head>
 
-<body class="bg-white text-gray-900">
-    <%- include('../partials/header') %>
+<body class="flex min-h-screen flex-col bg-white text-negro">
+    <main class="flex-1">
+        <%- body %>
+    </main>
 
-        <main>
-            <%- body %>
-        </main>
+    <%- include('../partials/footer') %>
 </body>
 
 </html>
