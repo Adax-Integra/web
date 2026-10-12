@@ -10,7 +10,7 @@ import icons from './utils/icons.js';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 // Security headers
 app.use(helmet({ contentSecurityPolicy: false }));
