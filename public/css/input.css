@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@source "../../views/**/*.ejs";
+
+/* Adax Digitales Palette Color*/
+@theme {
+  --color-morado: #630e79;
+  --color-morado-noche: #1f0035;
+  --color-lila: #c38cba;
+  --color-lila-claro: #dba9cb;
+  --color-verde: #1f8249;
+  --color-naranja: #fc6103;
+  --color-naranja-claro: #f68744;
+  --color-gris: #ecebeb;
+  --color-negro: #090709;
+}
