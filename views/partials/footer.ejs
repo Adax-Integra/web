@@ -1,0 +1,36 @@
+<footer class="bg-morado-noche text-white">
+    <div class="mx-auto max-w-6xl px-4 py-8 text-center">
+        <%
+          const redes = [
+            { icon: icons.siFacebook, url: 'https://www.facebook.com/ADAxDigitales' },
+            { icon: icons.siInstagram, url: 'https://www.instagram.com/adax_digitales_a.c._/' },
+            { icon: icons.siX, url: 'https://x.com/ADAxDigitalesAC' },
+            { icon: icons.siYoutube, url: 'https://www.youtube.com/@adaxdigitales' },
+            { icon: icons.siSpotify, url: 'https://open.spotify.com/show/5yaZdYjbR36lrDmaJ0WhVk' },
+          ];
+        %>
+        <a href="https://api.whatsapp.com/send/?phone=%2B524461154903&amp;text&amp;type=phone_number&amp;app_absent=0"
+            target="_blank" rel="noopener"
+            class="inline-flex items-center gap-2 rounded bg-verde px-5 py-2 text-sm font-semibold hover:opacity-90">
+            Contáctanos
+            <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="<%= icons.siWhatsapp.path %>" />
+            </svg>
+        </a>
+
+        <div class="mt-6 flex flex-wrap justify-center gap-5">
+            <% redes.forEach(red => { %>
+                <a href="<%= red.url %>" target="_blank" rel="noopener" aria-label="<%= red.icon.title %>"
+                    class="text-lila hover:text-lila-claro">
+                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="<%= red.icon.path %>" />
+                    </svg>
+                </a>
+            <% }) %>
+        </div>
+    </div>
+
+    <div class="border-t border-lila/20">
+        <p class="mx-auto max-w-6xl px-4 py-4 text-center text-xs text-lila-claro">© 2026 Adax Digitales, A.C.</p>
+    </div>
+</footer>
