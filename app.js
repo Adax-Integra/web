@@ -29,6 +29,7 @@ app.use(express.json());
 
 // Routes
 app.use('/', indexRoutes);
+app.use('/adax-integra', indexRoutes);
 
 // 404
 app.use((req, res) => {
